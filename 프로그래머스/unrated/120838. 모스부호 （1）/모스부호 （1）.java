@@ -31,9 +31,9 @@ class Solution {
         m.put("-.--","y");
         m.put("--..","z");
 
-        String[] s = letter.split(" ");
-        for(int i = 0; i < s.length; i++){
-            answer += m.get(s[i]);
+        String[] letters = letter.split(" ");
+        for(String str : letters){
+            answer += m.get(str);
         }
         return answer;
     }
