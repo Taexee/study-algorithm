@@ -1,10 +1,10 @@
 # [level unrated] 배열 회전시키기 - 120844 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120844) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120844?language=java) 
 
 ### 성능 요약
 
-메모리: 74.2 MB, 시간: 0.02 ms
+메모리: 74.1 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 1일 12:45:4
+2023년 10월 1일 12:46:8
 
 ### 문제 설명
 
