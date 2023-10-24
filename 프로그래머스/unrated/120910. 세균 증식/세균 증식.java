@@ -1,5 +1,9 @@
 class Solution {
     public int solution(int n, int t) {
-        return (int)Math.pow(2, t)*n;
+        int answer = 0;
+
+        answer = n << t;
+
+        return answer;
     }
 }
