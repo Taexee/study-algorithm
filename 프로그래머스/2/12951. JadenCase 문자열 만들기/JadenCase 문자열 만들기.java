@@ -1,20 +1,14 @@
 class Solution {
-    public String solution(String s) {
+  public String solution(String s) {
         String answer = "";
-        String[] sp = s.split(" "); 
+        String[] sp = s.toLowerCase().split("");
+        boolean flag = true;
 
-        for(int i = 0; i < sp.length; i++){
-            if(sp[i].length() == 0) answer += " "; 
-            else{
-                answer += sp[i].substring(0, 1).toUpperCase(); 
-                answer += sp[i].substring(1, sp[i].length()).toLowerCase(); 
-                answer += " "; 
-            }
-            
+        for(String ss : sp) {
+            answer += flag ? ss.toUpperCase() : ss;
+            flag = ss.equals(" ") ? true : false;
         }
 
-        if(s.substring(s.length() -1, s.length()).equals(" ")) return answer;
-
-        return answer.substring(0, answer.length() - 1);
-    }
+        return answer;
+  }
 }
