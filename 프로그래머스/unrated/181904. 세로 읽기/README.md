@@ -1,10 +1,10 @@
 # [level unrated] 세로 읽기 - 181904 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181904) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181904?language=java) 
 
 ### 성능 요약
 
-메모리: 76.4 MB, 시간: 1.45 ms
+메모리: 79.1 MB, 시간: 8.86 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 1일 3:58:28
+2023년 11월 1일 3:59:51
 
 ### 문제 설명
 
