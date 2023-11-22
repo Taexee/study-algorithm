@@ -1,23 +1,23 @@
 import java.util.*;
 class Solution {
     public int[] solution(int[] arr, boolean[] flag) {
-        int idx = 0;
-        List<Integer> array = new ArrayList<>();
-        for(boolean f : flag){
-            if(f) {
-                for (int i = 0; i < arr[idx]*2; i++) {
-                    array.add(arr[idx]);
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if (flag[i]) {
+                for (int j = 0; j < arr[i] * 2; j++) {
+                    list.add(arr[i]);
                 }
             } else {
-                for (int i = 0; i < arr[idx]; i++) {
-                    array.remove(array.size()-1);
+                for (int j = 0; j < arr[i]; j++) {
+                    list.remove(list.size()- 1);
                 }
             }
-            idx++;
         }
-        int[] answer = new int[array.size()];
-        for(int i = 0; i < array.size(); i++){
-            answer[i] = array.get(i);
+
+        int[] answer = new int[list.size()];
+
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
         }
         return answer;
     }
