@@ -12,7 +12,7 @@ public class Solution {
         }
 
         int[] answer = new int[s.size()];
-        for(int i = s.size()-1; i >= 0; i--) {
+        for(int i = 0; i <s.size() ; i++) {
             answer[i] = s.get(i);
         }
         return answer;
