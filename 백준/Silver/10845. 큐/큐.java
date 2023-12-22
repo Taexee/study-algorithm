@@ -25,26 +25,19 @@ public class Main {
                     q.offer(b);
                     break;
                 case "pop":
-                    if (q.isEmpty()) {
-                        sb.append("-1\n");
-                    } else {
-                        sb.append(q.remove() + "\n");
-                    }
+                    sb.append(q.isEmpty() ? "-1\n" : q.remove() + "\n");
                     break;
                 case "size":
                     sb.append(q.size() + "\n");
                     break;
                 case "empty":
-                    if (q.isEmpty()) sb.append("1\n");
-                    else sb.append("0\n");
+                    sb.append(q.isEmpty() ? "1\n" : "0\n");
                     break;
                 case "front":
-                    if (q.isEmpty()) sb.append("-1\n");
-                    else sb.append(q.peek() + "\n");
+                    sb.append(q.isEmpty() ? "-1\n" : q.peek() + "\n");
                     break;
                 case "back":
-                    if (q.isEmpty()) sb.append("-1\n");
-                    else sb.append(b + "\n");
+                    sb.append(q.isEmpty() ? "-1\n" : b + "\n");
                     break;
             }
         }
